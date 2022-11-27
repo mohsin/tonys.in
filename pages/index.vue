@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-12">
                     <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
+                        <li><a href="#" class="button"><Icon class="text-sm opacity-50 h-8 w-8 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:file" />Tell Me More</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                                 mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
                                 Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
                                 <ul class="actions">
-                                    <li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+                                    <li><a href="#" class="button"><Icon class="text-sm opacity-50 h-8 w-8 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:file" />Continue Reading</a></li>
                                 </ul>
                             </article>
 
@@ -122,7 +122,7 @@
                                 tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
                                 magna tempus.</p>
                                 <ul class="actions">
-                                    <li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+                                    <li><a href="#" class="button"><Icon class="text-sm opacity-50 h-8 w-8 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:file" />Continue Reading</a></li>
                                 </ul>
                             </article>
 
@@ -192,7 +192,7 @@
                                                 convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
                                                 facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
                                                 <ul class="actions">
-                                                    <li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+                                                    <li><a href="#" class="button"><Icon class="text-sm opacity-50 h-8 w-8 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:file" />Learn More</a></li>
                                                 </ul>
                                             </article>
 
@@ -210,7 +210,7 @@
                                                 convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
                                                 facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
                                                 <ul class="actions">
-                                                    <li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+                                                    <li><a href="#" class="button"><Icon class="text-sm opacity-50 h-8 w-8 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:file" />Learn More</a></li>
                                                 </ul>
                                             </article>
 

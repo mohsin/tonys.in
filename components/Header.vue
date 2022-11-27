@@ -9,9 +9,9 @@
       <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li><a class="icon solid fa-home" href="/"><span>Introduction</span></a></li>
+            <li><a href="/"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:home" />Introduction</span></a></li>
             <li>
-              <a href="#" class="icon fa-chart-bar"><span>Dropdown</span></a>
+              <a href="#"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:chart-bar" />Dropdown</span></a>
               <ul>
                 <li><a href="#">Lorem ipsum dolor</a></li>
                 <li><a href="#">Magna phasellus</a></li>
@@ -27,9 +27,9 @@
                 <li><a href="#">Veroeros feugiat</a></li>
               </ul>
             </li>
-            <li><a class="icon solid fa-cog" href="/left-sidebar"><span>Left Sidebar</span></a></li>
-            <li><a class="icon solid fa-retweet" href="/right-sidebar"><span>Right Sidebar</span></a></li>
-            <li><a class="icon solid fa-sitemap" href="/no-sidebar"><span>No Sidebar</span></a></li>
+            <li><a href="/left-sidebar"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:cog" />Left Sidebar</span></a></li>
+            <li><a href="/right-sidebar"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:retweet" />Right Sidebar</span></a></li>
+            <li><a href="/no-sidebar"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:sitemap" />No Sidebar</span></a></li>
           </ul>
         </nav>
 

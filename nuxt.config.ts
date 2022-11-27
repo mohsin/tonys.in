@@ -17,6 +17,33 @@ export default defineNuxtConfig({
       ]
     },
   },
-  css: ['@/assets/styles.css'],
-  modules: ['@nuxtjs/tailwindcss']
+  css: [
+    '@/assets/styles.css'
+  ],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon'
+  ],
+  tailwindcss: {
+    config: {
+      content: [],
+      theme: {
+        screens: {
+          'sm': '736px',
+          'md': '980px',
+          'lg': '1280px',
+          'xl': '1680px'
+        },
+        extend: {
+          colors: {
+            'gandalf-gray': '#878787',
+            'grayish': '#e4e4e4'
+          },
+          borderRadius: {
+            '4xl': '2em'
+          }
+        }
+      }
+    }
+  }
 })

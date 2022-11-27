@@ -19,7 +19,10 @@
                   <textarea name="message" placeholder="Message"></textarea>
                 </div>
                 <div class="col-12">
-                  <a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
+                  <a href="#" class="button icon solid flex justify-center">
+                    <Icon class="text-sm h-8 w-8 opacity-50 no-underline font-normal not-italic antialiased leading-8 text-center p-2 mx-2 normal-case" name="fa-solid:envelope" />
+                    <span>Send Message</span>
+                  </a>
                 </div>
               </div>
             </form>
@@ -32,35 +35,10 @@
             leo nibh, rutrum eu malesuada.</p>
             <div class="row">
               <div class="col-6 col-12-small">
-                <ul class="icons">
-                  <li class="icon solid fa-home">
-                    1234 Somewhere Road<br />
-                    Nashville, TN 00000<br />
-                    USA
-                  </li>
-                  <li class="icon solid fa-phone">
-                    (000) 000-0000
-                  </li>
-                  <li class="icon solid fa-envelope">
-                    <a href="#">info@untitled.tld</a>
-                  </li>
-                </ul>
+                <PageFooterInfoLinks :items="contacts" />
               </div>
-              <div class="col-6 col-12-small">
-                <ul class="icons">
-                  <li class="icon brands fa-twitter">
-                    <a href="#">@untitled</a>
-                  </li>
-                  <li class="icon brands fa-instagram">
-                    <a href="#">instagram.com/untitled</a>
-                  </li>
-                  <li class="icon brands fa-dribbble">
-                    <a href="#">dribbble.com/untitled</a>
-                  </li>
-                  <li class="icon brands fa-facebook-f">
-                    <a href="#">facebook.com/untitled</a>
-                  </li>
-                </ul>
+              <div class="col-6 col-12-small max-sm:!pt-0">
+                <PageFooterInfoLinks :items="socials" />
               </div>
             </div>
           </section>
@@ -74,3 +52,46 @@
     </div>
   </section>
 </template>
+
+<script setup>
+var contacts = [
+  {
+    icon: 'fa-solid:home',
+    text: `1234 Somewhere Road
+          <br />Nashville, TN 00000
+          <br />USA`
+  },
+  {
+    icon: 'fa-solid:phone',
+    text: '(000) 000-0000',
+    href: 'tel:(000) 000-0000'
+  },
+  {
+    icon: 'fa-solid:home',
+    text: 'info@untitled.tld',
+    href: 'mailto:info@untitled.tld'
+  },
+];
+var socials = [
+  {
+    icon: 'fa6-brands:twitter',
+    text: '@untitled',
+    href: 'http://twitter.com/@untitled'
+  },
+  {
+    icon: 'fa6-brands:instagram',
+    text: 'instagram.com/untitled',
+    href: 'http://instagram.com/@untitled'
+  },
+  {
+    icon: 'fa6-brands:dribbble',
+    text: 'dribbble.com/untitled',
+    href: 'http://dribble.com/untitled'
+  },
+  {
+    icon: 'fa6-brands:facebook-f',
+    text: 'facebook.com/untitled',
+    href: 'http://facebook.com/untitled'
+  }
+];
+</script>
