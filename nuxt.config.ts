@@ -1,3 +1,21 @@
+const plugin = require('tailwindcss/plugin')
+const backfaceVisibility = plugin(function({addUtilities}) {
+  addUtilities({
+    '.backface-visible': {
+      'backface-visibility': 'visible',
+      '-moz-backface-visibility': 'visible',
+      '-webkit-backface-visibility': 'visible',
+      '-ms-backface-visibility': 'visible'
+    },
+    '.backface-hidden': {
+      'backface-visibility': 'hidden',
+      '-moz-backface-visibility': 'hidden',
+      '-webkit-backface-visibility': 'hidden',
+      '-ms-backface-visibility': 'hidden'
+    }
+  })
+});
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -17,9 +35,6 @@ export default defineNuxtConfig({
       ]
     },
   },
-  css: [
-    '@/assets/styles.css'
-  ],
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon'
@@ -37,13 +52,19 @@ export default defineNuxtConfig({
         extend: {
           colors: {
             'gandalf-gray': '#878787',
-            'grayish': '#e4e4e4'
+            'grayish': '#e4e4e4',
+            'offwhite': '#f0f0f0'
           },
           borderRadius: {
             '4xl': '2em'
+          },
+          fontFamily: {
+            common: ['Source Sans Pro', 'sans-serif'],
+            heading: ['Arvo', 'Rockwell', 'Courier', 'monospace']
           }
         }
-      }
+      },
+      plugins: [backfaceVisibility]
     }
   }
 })

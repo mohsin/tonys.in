@@ -1,38 +1,81 @@
 <template>
-  <section id="header">
-    <div class="container">
+  <section id="header" class="relative bg-white text-center">
+    <div class="pt-24 sm:pt-40 md:pt-48 lg:pt-56 px-0 pb-16 sm:pb-28 md:pb-20 lg:pb-28 border-b-2 border-[#e5e5e5] shadow-[inset_0px_-8px_0px_0px_#fff,inset_0px_-10px_0px_0px_#e5e5e5] mx-auto my-0 max-w-full w-[calc(100%-40px)] sm:w-[calc(100%-100px)] md:w-[calc(100%-80px)] lg:w-[68em] xl:w-[70em]">
 
       <!-- Logo -->
-        <h1 id="logo"><a href="/">Strongly Typed</a></h1>
-        <p>A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
+        <h1 id="logo" class="[text-shadow:0.05em_0.075em_0px_rgba(0,0,0,0.1)] leading-9 md:leading-5 tracking-[8px] md:tracking-[13px] uppercase font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-red-400"><a class="border-0 no-underline" href="/">Strongly Typed</a></h1>
+        <p class="mt-5 sm:mt-10 tracking-widest sm:tracking-[3px] text-[#888] uppercase font-normal text-sm text-center">A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
 
       <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li><a href="/"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:home" />Introduction</span></a></li>
-            <li>
-              <a href="#"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:chart-bar" />Dropdown</span></a>
-              <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
-                <li>
-                  <a href="#">Phasellus consequat</a>
-                  <ul>
-                    <li><a href="#">Magna phasellus</a></li>
-                    <li><a href="#">Etiam dolore nisl</a></li>
-                    <li><a href="#">Phasellus consequat</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Veroeros feugiat</a></li>
-              </ul>
-            </li>
-            <li><a href="/left-sidebar"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:cog" />Left Sidebar</span></a></li>
-            <li><a href="/right-sidebar"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:retweet" />Right Sidebar</span></a></li>
-            <li><a href="/no-sidebar"><span><Icon class="text-sm bg-gandalf-gray text-grayish rounded-4xl h-8 w-8 mx-2 no-underline font-normal not-italic antialiased leading-8 text-center p-2 normal-case" name="fa-solid:sitemap" />No Sidebar</span></a></li>
-          </ul>
+        <nav class="hidden md:block absolute top-12 left-0 w-full cursor-default" id="nav">
+          <PageNavList :links="navLinks" />
         </nav>
 
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+var navLinks = [
+  {
+    href: '/',
+    icon: 'fa-solid:home',
+    text: 'Introduction'
+  },
+  {
+    href: '#',
+    icon: 'fa-solid:chart-bar',
+    text: 'Dropdown',
+    children: [
+      {
+        href: '#',
+        text: 'Lorem ipsum dolor'
+      },
+      {
+        href: '#',
+        text: 'Magna phasellus'
+      },
+      {
+        href: '#',
+        text: 'Etiam dolore nisl'
+      },
+      {
+        href: '#',
+        text: 'Phasellus consequat',
+        children: [
+          {
+            href: '#',
+            text: 'Lorem ipsum dolor'
+          },
+          {
+            href: '#',
+            text: 'Magna phasellus'
+          },
+          {
+            href: '#',
+            text: 'Etiam dolore nisl'
+          }
+        ]
+      },
+      {
+        href: '#',
+        text: 'Veroeros feugiat'
+      }
+    ]
+  },
+  {
+    href: '/left-sidebar',
+    icon: 'fa-solid:cog',
+    text: 'Left Sidebar'
+  },
+  {
+    href: '/right-sidebar',
+    icon: 'fa-solid:retweet',
+    text: 'Right Sidebar'
+  },{
+    href: '/no-sidebar',
+    icon: 'fa-solid:sitemap',
+    text: 'No Sidebar'
+  },
+];
+</script>
